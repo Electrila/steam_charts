@@ -1,6 +1,5 @@
-# frozen_string_literal: true
-
 require_relative "steam_charts/version"
+require_relative "steam_charts/cli"
 
 module SteamCharts
   class Error < StandardError; end

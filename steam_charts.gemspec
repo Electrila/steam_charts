@@ -5,7 +5,7 @@ require_relative "lib/steam_charts/version"
 Gem::Specification.new do |spec|
   spec.name          = "steam_charts"
   spec.version       = SteamCharts::VERSION
-  spec.authors       = ["megann"]
+  spec.authors       = ["Megann Comstock"]
   spec.email         = ["megann.elizabeth.king@gmail.com"]
 
   spec.summary       = "TODO: Write a short summary, because RubyGems requires one."
