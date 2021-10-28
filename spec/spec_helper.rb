@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require "steam_charts"
 
 RSpec.configure do |config|

@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative "lib/steam_charts/version"
 
 Gem::Specification.new do |spec|
@@ -31,6 +29,14 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "pry"
+  
+  spec.add_dependency "open-uri"
+  spec.add_dependency "nokogiri"
+  spec.add_dependency "mechanize"
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
