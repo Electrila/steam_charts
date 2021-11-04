@@ -7,13 +7,15 @@ class SteamCharts::CLI
     end
 
     def get_search_options
-        @search_options = ["Search by Trending Games", "Search by Top 10 Games", "Search by Top Records", "Search by All Top Games"]
+        SteamCharts::SearchOption.new("Trending Games")
+        SteamCharts::SearchOption.new("Top 10 Games")
+        @search_options = SteamCharts::SearchOption.all
     end
 
     def list_search_options
         puts "Please choose an option"
         @search_options.each.with_index(1) do |option, index |
-            puts "#{index}. #{option}"
+            puts "#{index}. #{option.search_term}"
         end
     end
 
@@ -28,8 +30,7 @@ class SteamCharts::CLI
 
     def display_games_for(user_choice)
         choice = @search_options[user_choice - 1]
-        puts "Here are the current results for #{choice}:\n"
-        puts "games"
+        puts "Here are the current results for '#{choice.search_term}':\n"
     end
 
 end
