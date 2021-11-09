@@ -7,8 +7,6 @@ class SteamCharts::CLI
     end
 
     def get_search_options
-        SteamCharts::SearchOption.new("Trending Games")
-        SteamCharts::SearchOption.new("Top 10 Games")
         @search_options = SteamCharts::SearchOption.all
     end
 
