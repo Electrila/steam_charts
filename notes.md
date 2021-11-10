@@ -24,3 +24,5 @@
     - Scraper
 
 3. Modules?
+
+4. Colorize Gem?

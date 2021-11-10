@@ -9,6 +9,7 @@ class SteamCharts::SearchOption
     end
 
     def self.all
+        SteamCharts::Scraper.scrape_search_options if @@all.empty?
         @@all
     end
 
