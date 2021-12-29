@@ -13,7 +13,7 @@ class SteamCharts::CLI
     def list_search_options
         puts "Please choose an option"
         @search_options.each.with_index(1) do |option, index |
-            puts "#{index}. #{option.search_term}"
+            puts "#{index}. #{option.search_option}"
         end
     end
 
@@ -28,7 +28,12 @@ class SteamCharts::CLI
 
     def display_games_for(user_choice)
         choice = @search_options[user_choice - 1]
-        puts "Here are the current results for '#{choice.search_term}':\n"
+        puts choice.text
+        # choice.get_games
+        # puts "Here are the current results for '#{choice.search_option}':\n"
+        # choice.games.each.with_index(1) do |game, index|
+        #     puts "#{index}. #{game.title}"
+        # end
     end
 
 end
