@@ -16,3 +16,5 @@ gem "open-uri"
 gem "nokogiri"
 
 gem "mechanize"
+
+gem "date"
